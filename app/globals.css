@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+/* ============================================================
+   Dental Clinic Design System — CSS Custom Properties
+   ============================================================ */
+
+:root {
+  --primary: #0D7A5F;
+  --primary-light: #A7F3D0;
+  --primary-dark: #064E3B;
+  --accent: #00A86B;
+  --accent-dark: #047857;
+  --background: #F8FAF9;
+  --surface: #EDF7F3;
+  --text-primary: #0C261F;
+  --text-secondary: #3D5A52;
+  --success: #10B981;
+  --border: #CFE4DC;
+  --white: #FFFFFF;
+}
+
+@theme inline {
+  --color-primary: #0D7A5F;
+  --color-primary-light: #A7F3D0;
+  --color-primary-dark: #064E3B;
+  --color-accent: #00A86B;
+  --color-accent-dark: #047857;
+  --color-background: #F8FAF9;
+  --color-surface: #EDF7F3;
+  --color-text-primary: #0C261F;
+  --color-text-secondary: #3D5A52;
+  --color-success: #10B981;
+  --color-border: #CFE4DC;
+  --color-white: #FFFFFF;
+
+  --font-heading: var(--font-heading, "Poppins", ui-sans-serif, system-ui, sans-serif);
+  --font-body: var(--font-body, "Inter", ui-sans-serif, system-ui, sans-serif);
+}
+
+/* ============================================================
+   Base Styles
+   ============================================================ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-primary);
+  background-color: var(--background);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--text-primary);
+}
+
+/* ============================================================
+   Custom Utility Classes
+   ============================================================ */
+
+.section-padding {
+  @apply px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24;
+}
+
+.container-width {
+  @apply max-w-7xl mx-auto;
+}
+
+/* ============================================================
+   Calendly Widget Overrides
+   ============================================================ */
+
+.calendly-inline-widget {
+  min-width: 320px;
+}
+
+/* ============================================================
+   Lightbox Overrides
+   ============================================================ */
+
+.yarl__container {
+  background-color: rgba(6, 36, 29, 0.95) !important;
+}
+
+/* ============================================================
+   Scrollbar Styling
+   ============================================================ */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--surface);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-light);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
