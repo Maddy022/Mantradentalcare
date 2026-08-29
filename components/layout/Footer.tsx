@@ -163,9 +163,15 @@ export function Footer() {
           <p>
             &copy; {new Date().getFullYear()} {clinicInfo.name}. All rights reserved.
           </p>
-          <p className="font-medium">
-            Emergency? Call us: <a href={`tel:${clinicInfo.phone.replace(/[^0-9+]/g, "")}`} className="text-white hover:text-primary-light transition-colors">{clinicInfo.phone}</a>
-          </p>
+          <div className="flex items-center gap-4 text-xs sm:text-sm">
+            <Link href="/privacy" className="text-gray-400 hover:text-white transition-colors">
+              Privacy Policy & Medical Disclaimer
+            </Link>
+            <span>•</span>
+            <p className="font-medium">
+              Emergency? <a href={`tel:${clinicInfo.phone.replace(/[^0-9+]/g, "")}`} className="text-white hover:text-primary-light transition-colors">{clinicInfo.phone}</a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
