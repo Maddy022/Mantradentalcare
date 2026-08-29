@@ -9,8 +9,8 @@ export const clinicInfo = {
   tagline: "Your Smile, Our Passion",
   description:
     "Providing exceptional, pain-free dental care at our premier Mavdi Branch in Rajkot. Led by Dr. Chandni Rughani and our expert dental team, we use state-of-the-art technology to deliver lasting, radiant smiles.",
-  phone: "+91 94082 04290",
-  secondaryPhone: "+91 84018 37974",
+  phone: "+91 84018 37974",
+  secondaryPhone: "+91 94082 04290",
   email: "info@mantradentalcare.com",
   address: "Shop No. 133-134, Crystal Heaven Complex, Mavdi-Kankot Road, Mavdi, Rajkot, Gujarat 360004",
   city: "Rajkot",
