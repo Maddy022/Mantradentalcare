@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function DoctorsPage() {
   const credentials = [
-    { title: "12+ & 14+ Years Experience", desc: "Decades of trusted dental expertise in Rajkot" },
+    { title: "18+ & 20+ Years Experience", desc: "Decades of trusted dental expertise in Rajkot" },
     { title: "Implantology & Aesthetic Fellowships", desc: "Advanced certifications in surgical implants & root canals" },
     { title: "Modern Technology & Laser Care", desc: "Painless procedures with hospital-grade autoclave sterilization" },
   ];

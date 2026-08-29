@@ -36,7 +36,7 @@ export const clinicInfo = {
 };
 
 export const stats = [
-  { value: "15+", label: "Years Experience" },
+  { value: "18+", label: "Years Experience" },
   { value: "10,000+", label: "Happy Patients" },
   { value: "5.0", label: "Google Rating (133 Reviews)" },
   { value: "24+", label: "Treatments" },
@@ -257,9 +257,9 @@ export const doctors: Doctor[] = [
     name: "Dr. Chandni Rughani",
     title: "Chief Dental Surgeon & Founder",
     specialty: "Cosmetic Dentistry, RCT & Family Dental Care",
-    bio: "Chief Dental Surgeon leading Mantra Dental Care at our Mavdi Branch. With over 12 years of clinical excellence, Dr. Chandni specializes in painless root canals, cosmetic smile makeovers, tooth restorations, and comprehensive dental health for all ages.",
+    bio: "Chief Dental Surgeon leading Mantra Dental Care at our Mavdi Branch. With over 18 years of clinical excellence, Dr. Chandni specializes in painless root canals, cosmetic smile makeovers, tooth restorations, and comprehensive dental health for all ages.",
     qualifications: ["B.D.S. - Dental Surgeon", "Certified in Aesthetic Dentistry", "Fellow in Advanced Endodontics"],
-    experience: "12+ Years Experience",
+    experience: "18+ Years Experience",
     image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=800&q=80",
     isVisiting: false,
     isBookable: true,
@@ -269,9 +269,9 @@ export const doctors: Doctor[] = [
     name: "Dr. Nilesh Rughani",
     title: "Visiting Senior Implantologist & Oral Surgeon",
     specialty: "Dental Implants & Full Mouth Rehabilitation",
-    bio: "Visiting Senior Implantologist with 14+ years of surgical mastery in conventional, basal, and immediate load implants. Dr. Nilesh visits the Mavdi Branch for scheduled advanced implant and complex surgical cases.",
+    bio: "Visiting Senior Implantologist with 20+ years of surgical mastery in conventional, basal, and immediate load implants. Dr. Nilesh visits the Mavdi Branch for scheduled advanced implant and complex surgical cases.",
     qualifications: ["B.D.S. - Dental Surgeon", "Fellowship in Oral Implantology", "Certified Implant Specialist"],
-    experience: "14+ Years Experience",
+    experience: "20+ Years Experience",
     image: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=800&q=80",
     isVisiting: true,
     isBookable: false,
