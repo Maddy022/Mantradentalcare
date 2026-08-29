@@ -34,6 +34,16 @@ export default function BookAppointmentPage() {
           {/* Main Booking Widget Area */}
           <div className="lg:col-span-2">
             <div className="bg-white p-4 sm:p-6 rounded-3xl border border-border shadow-xs">
+              <div className="mb-4 p-4 rounded-2xl bg-surface border border-border">
+                <p className="text-xs sm:text-sm text-text-primary font-medium flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-emerald-500 shrink-0"></span>
+                  <span><strong>Online Scheduling:</strong> Available for <strong>Dr. Chandni Rughani</strong> (Chief Dental Surgeon).</span>
+                </p>
+                <p className="text-xs text-text-secondary mt-1 pl-4">
+                  For complex implant consultations with visiting specialist <strong>Dr. Nilesh Rughani</strong>, please call our reception at <a href={`tel:${clinicInfo.phone.replace(/[^0-9+]/g, "")}`} className="text-primary font-bold hover:underline">{clinicInfo.phone}</a>.
+                </p>
+              </div>
+
               <h2 className="text-xl sm:text-2xl font-bold font-heading text-text-primary mb-4">
                 Select an Appointment Slot
               </h2>

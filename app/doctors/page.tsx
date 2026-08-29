@@ -3,18 +3,18 @@ import Image from "next/image";
 import Link from "next/link";
 import { doctors, clinicInfo } from "@/lib/data";
 import { DoctorCard } from "@/components/DoctorCard";
-import { Award, Users, CheckCircle2, Calendar } from "lucide-react";
+import { Award, CheckCircle2, Calendar, Phone } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Our Doctors",
-  description: `Meet the team of specialist dentists and clinical directors at ${clinicInfo.name}.`,
+  description: `Meet Dr. Chandni Rughani and Dr. Nilesh Rughani at ${clinicInfo.name}, Rajkot.`,
 };
 
 export default function DoctorsPage() {
   const credentials = [
-    { title: "Specialist MDS Degrees", desc: "Top Indian & International dental institutes" },
-    { title: "Invisalign & Implant Certified", desc: "Fellowships in ICOI and clear aligner orthodontics" },
-    { title: "Continuous Clinical Training", desc: "Adopting latest rotary, digital, and laser methods" },
+    { title: "12+ & 14+ Years Experience", desc: "Decades of trusted dental expertise in Rajkot" },
+    { title: "Implantology & Aesthetic Fellowships", desc: "Advanced certifications in surgical implants & root canals" },
+    { title: "Modern Technology & Laser Care", desc: "Painless procedures with hospital-grade autoclave sterilization" },
   ];
 
   return (
@@ -36,13 +36,13 @@ export default function DoctorsPage() {
 
         <div className="container mx-auto max-w-4xl relative z-10 text-white">
           <span className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md text-white px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold mb-4 border border-white/25">
-            <Award className="w-3.5 h-3.5 text-emerald-300" /> Specialist Dental Faculty
+            <Award className="w-3.5 h-3.5 text-emerald-300" /> Clinical Leadership • Mavdi Branch
           </span>
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold font-heading mb-4 tracking-tight drop-shadow-xs">
-            Meet Our Specialist Dentists
+            Meet Our Doctors
           </h1>
           <p className="text-base sm:text-lg text-white/90 max-w-2xl mx-auto leading-relaxed">
-            Our multidisciplinary team of prosthodontists, orthodontists, endodontists, and pediatric dentists bring decades of combined experience.
+            Delivering personalized, gentle, and expert dental care led by Dr. Chandni Rughani and visiting implant specialist Dr. Nilesh Rughani.
           </p>
         </div>
       </section>
@@ -66,9 +66,9 @@ export default function DoctorsPage() {
         </div>
       </section>
 
-      {/* Main Content Grid */}
-      <section className="py-16 sm:py-20 px-4 container mx-auto max-w-7xl">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+      {/* Main Content Grid — 2 Featured Doctors */}
+      <section className="py-16 sm:py-24 px-4 container mx-auto max-w-5xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
           {doctors.map((doctor) => (
             <DoctorCard key={doctor.id} doctor={doctor} />
           ))}
@@ -79,18 +79,24 @@ export default function DoctorsPage() {
       <section className="bg-surface border-t border-border py-16 sm:py-20 px-4 text-center">
         <div className="container mx-auto max-w-3xl space-y-4">
           <h2 className="text-3xl sm:text-4xl font-extrabold font-heading text-text-primary">
-            Ready to Consult with Our Specialists?
+            Schedule Your Visit Today
           </h2>
           <p className="text-text-secondary text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
-            Schedule an appointment today. Choose your preferred doctor or let us match you with the right specialist.
+            Book an appointment online with Dr. Chandni Rughani, or call our desk to inquire about Dr. Nilesh Rughani&apos;s visiting implant schedule.
           </p>
-          <div className="pt-2">
+          <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3">
             <Link
               href="/book-appointment"
-              className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-bold py-3.5 px-8 rounded-full transition-all shadow-md text-base"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-dark text-white font-bold py-3.5 px-8 rounded-full transition-all shadow-md text-base"
             >
-              <Calendar className="w-4 h-4" /> Book an Appointment
+              <Calendar className="w-4 h-4" /> Book with Dr. Chandni
             </Link>
+            <a
+              href={`tel:${clinicInfo.phone.replace(/[^0-9+]/g, "")}`}
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-surface text-text-primary border border-border font-bold py-3.5 px-8 rounded-full transition-all text-base"
+            >
+              <Phone className="w-4 h-4 text-primary" /> Call Clinic: {clinicInfo.phone}
+            </a>
           </div>
         </div>
       </section>

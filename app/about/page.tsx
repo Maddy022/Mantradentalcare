@@ -186,17 +186,17 @@ export default function AboutPage() {
       <section className="py-16 sm:py-24 px-4 container mx-auto max-w-7xl">
         <div className="text-center max-w-3xl mx-auto mb-14">
           <span className="text-xs font-bold uppercase tracking-widest text-primary bg-surface px-4 py-1.5 rounded-full border border-border">
-            Meet the Specialists
+            Clinical Leadership
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-text-primary font-heading mt-3">
-            Experienced Clinical Doctors
+            Our Doctors
           </h2>
           <p className="text-text-secondary text-sm sm:text-base mt-2">
-            Our team consists of qualified prosthodontists, orthodontists, endodontists, and pediatric dentists.
+            Led by Dr. Chandni Rughani (Chief Dental Surgeon) and visiting implantologist Dr. Nilesh Rughani.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {doctors.map((doctor) => (
             <DoctorCard key={doctor.id} doctor={doctor} />
           ))}

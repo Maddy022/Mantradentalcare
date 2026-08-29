@@ -247,6 +247,8 @@ export interface Doctor {
   qualifications: string[];
   experience: string;
   image: string;
+  isVisiting?: boolean;
+  isBookable?: boolean;
 }
 
 export const doctors: Doctor[] = [
@@ -254,41 +256,25 @@ export const doctors: Doctor[] = [
     id: "dr-chandni-rughani",
     name: "Dr. Chandni Rughani",
     title: "Chief Dental Surgeon & Founder",
-    specialty: "Cosmetic Dentistry & Aesthetic Restorations",
-    bio: "With over 12 years of clinical excellence, Dr. Chandni Rughani is known for her gentle, patient-first approach. She specializes in pain-free root canals, aesthetic crowns, and complete smile enhancements.",
+    specialty: "Cosmetic Dentistry, RCT & Family Dental Care",
+    bio: "Chief Dental Surgeon leading Mantra Dental Care at our Mavdi Branch. With over 12 years of clinical excellence, Dr. Chandni specializes in painless root canals, cosmetic smile makeovers, tooth restorations, and comprehensive dental health for all ages.",
     qualifications: ["B.D.S. - Dental Surgeon", "Certified in Aesthetic Dentistry", "Fellow in Advanced Endodontics"],
-    experience: "12+ Years",
+    experience: "12+ Years Experience",
     image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=800&q=80",
+    isVisiting: false,
+    isBookable: true,
   },
   {
     id: "dr-nilesh-rughani",
     name: "Dr. Nilesh Rughani",
-    title: "Senior Implantologist & Dental Surgeon",
-    specialty: "Dental Implants & Oral Rehabilitation",
-    bio: "Dr. Nilesh Rughani has transformed hundreds of smiles with advanced dental implants and full-mouth rehabilitation. His precision diagnostics and surgical mastery deliver natural, long-lasting results.",
+    title: "Visiting Senior Implantologist & Oral Surgeon",
+    specialty: "Dental Implants & Full Mouth Rehabilitation",
+    bio: "Visiting Senior Implantologist with 14+ years of surgical mastery in conventional, basal, and immediate load implants. Dr. Nilesh visits the Mavdi Branch for scheduled advanced implant and complex surgical cases.",
     qualifications: ["B.D.S. - Dental Surgeon", "Fellowship in Oral Implantology", "Certified Implant Specialist"],
-    experience: "14+ Years",
+    experience: "14+ Years Experience",
     image: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    id: "dr-ananya-gupta",
-    name: "Dr. Ananya Gupta",
-    title: "Consultant Endodontist",
-    specialty: "Microscopic Root Canal Therapy",
-    bio: "Specializing in pain-free single-sitting root canal treatments using advanced rotary and microscopic systems.",
-    qualifications: ["BDS", "MDS Endodontics & Conservative Dentistry"],
-    experience: "10+ Years",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    id: "dr-rajesh-patel",
-    name: "Dr. Rajesh Patel",
-    title: "Consultant Orthodontist",
-    specialty: "Clear Aligners & Braces",
-    bio: "Certified clear aligner specialist delivering discreet, comfortable orthodontic corrections for teens and adults.",
-    qualifications: ["BDS", "MDS Orthodontics", "Invisalign Certified"],
-    experience: "11+ Years",
-    image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=800&q=80",
+    isVisiting: true,
+    isBookable: false,
   },
 ];
 
