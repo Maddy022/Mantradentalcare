@@ -72,7 +72,7 @@ export const treatments: Treatment[] = [
     name: "Digital X-Rays & Diagnostics",
     description:
       "Advanced digital imaging for accurate diagnosis with minimal radiation exposure.",
-    icon: "ScanLine",
+    icon: "Camera",
     category: "general",
   },
   {

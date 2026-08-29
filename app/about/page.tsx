@@ -29,7 +29,7 @@ export default function AboutPage() {
       icon: Sparkles,
       title: "State-of-the-Art Tech",
       description:
-        "Digital X-rays, 3D imaging, and modern rotary systems ensure painless procedures and pinpoint precision.",
+        "Digital X-rays, modern rotary systems, and laser equipment ensure painless procedures and pinpoint precision.",
     },
     {
       icon: Clock,
@@ -108,7 +108,7 @@ export default function AboutPage() {
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
               {[
-                "Digital low-radiation 3D imaging",
+                "Digital low-radiation X-rays",
                 "Gentle pain-free rotary techniques",
                 "Upfront transparent pricing",
                 "Dedicated pediatric dentistry wing",

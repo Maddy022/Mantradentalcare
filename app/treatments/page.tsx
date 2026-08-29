@@ -120,7 +120,7 @@ export default function TreatmentsPage() {
             Need a Customized Dental Plan?
           </h2>
           <p className="text-text-secondary text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
-            Our clinical specialists will conduct a thorough 3D scan and create a step-by-step personalized treatment roadmap for you.
+            Our clinical team will conduct a thorough examination and create a step-by-step personalized treatment roadmap for you.
           </p>
           <div className="pt-3 flex flex-col sm:flex-row justify-center gap-4">
             <Link 

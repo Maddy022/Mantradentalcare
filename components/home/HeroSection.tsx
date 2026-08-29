@@ -5,7 +5,7 @@ import { Star, ShieldCheck, Sparkles, Calendar, ArrowRight, CheckCircle2, Award 
 
 export function HeroSection() {
   const heroFeatures = [
-    "Digital 3D Scans & Laser Tech",
+    "Digital X-Rays & Laser Tech",
     "Hospital-Grade Multi-Tier Sterilization",
     "Gentle, Pain-Free Anesthesia",
   ];

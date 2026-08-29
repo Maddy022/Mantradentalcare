@@ -1,13 +1,13 @@
 import Link from "next/link";
-import { Scan, FileText, Sparkles, HeartHandshake, ArrowRight } from "lucide-react";
+import { Stethoscope, FileText, Sparkles, HeartHandshake, ArrowRight } from "lucide-react";
 
 export function PatientPathway() {
   const steps = [
     {
       step: "01",
-      icon: Scan,
-      title: "Digital 3D Scan",
-      desc: "Low-radiation digital imaging and high-res oral scan to map every detail of your dental health in minutes.",
+      icon: Stethoscope,
+      title: "Diagnostic Checkup",
+      desc: "Low-radiation digital X-rays and thorough oral evaluation to evaluate every detail of your dental health in minutes.",
     },
     {
       step: "02",
